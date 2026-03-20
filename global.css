@@ -263,3 +263,178 @@ body.home {
     .pricing-card.popular { transform: none; }
     .pricing-card.popular:hover { transform: translateY(-10px); }
 }
+
+/* Navbar simples */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+    padding: 15px 5%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #a95a5a;
+    font-size: 1.8rem;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #ddd;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #a95a5a;
+}
+
+/* Hero */
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(26,0,0,0.8)), url('https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&q=80') center/cover; /* troque por imagem do cliente */
+}
+
+.hero h1 {
+    font-size: 4rem;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.hero .subtitle {
+    font-size: 1.6rem;
+    color: #ccc;
+    margin-bottom: 32px;
+}
+
+/* Seções gerais */
+.section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.8rem;
+    color: #a95a5a;
+    margin-bottom: 32px;
+}
+
+/* Serviços grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.service-item {
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 32px 24px;
+    transition: transform 0.3s;
+}
+
+.service-item:hover {
+    transform: translateY(-8px);
+    border-color: #a95a5a;
+}
+
+.service-item h3 {
+    color: #a95a5a;
+    margin-bottom: 16px;
+}
+
+/* Formulário contato */
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 14px;
+    background: #1a1a1a;
+    border: 1px solid #444;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background: #a95a5a;
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background: #c00000;
+}
+
+/* Botão primário genérico */
+.btn-primary {
+    background: #a95a5a;
+    color: white;
+    padding: 14px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background: #c00000;
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    background: #000;
+    padding: 40px 0;
+    text-align: center;
+    border-top: 1px solid #222;
+}
+
+.footer a {
+    color: #a95a5a;
+    text-decoration: none;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.8rem; }
+    .hero .subtitle { font-size: 1.3rem; }
+    .nav-links { gap: 20px; font-size: 0.95rem; }
+}

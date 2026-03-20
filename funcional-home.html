@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Nome do Cliente] - Site Funcional</title>
+    <link rel="icon" href="https://files.catbox.moe/latvbr.png" type="image/png">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="funcional.css">
+</head>
+<body class="home">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">[Nome do Cliente]</a>
+            <ul class="nav-links">
+                <li><a href="#hero">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <h1>[Nome do Negócio ou Projeto]</h1>
+            <p class="subtitle">Sites funcionais, rápidos e diretos ao ponto.</p>
+            <a href="#contato" class="btn-primary">Fale Conosco</a>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="section">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p class="about-text">Equipe especializada em criação de sites que atendem exatamente o que você precisa. Foco em qualidade, prazo e suporte real.</p>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="section services">
+        <div class="container">
+            <h2>O que Oferecemos</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-icon icon-web"></div>
+                    <h3>Site Institucional</h3>
+                    <p>Site profissional com até 5 páginas, responsivo, otimizado e rápido.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon icon-funcional"></div>
+                    <h3>Funcionalidades</h3>
+                    <p>Formulários que enviam e-mail, integração WhatsApp, galeria interativa.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon icon-suporte"></div>
+                    <h3>Suporte</h3>
+                    <p>Acompanhamento por 30 dias após entrega + ajustes pequenos inclusos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="section contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <p>Envie sua mensagem ou clique no WhatsApp. Responderemos rápido.</p>
+
+            <form id="contact-form" class="contact-form">
+                <input type="text" id="nome" placeholder="Seu Nome" required>
+                <input type="email" id="email" placeholder="Seu E-mail" required>
+                <input type="tel" id="telefone" placeholder="Telefone (WhatsApp)" required>
+                <textarea id="mensagem" placeholder="Descreva seu projeto..." rows="5" required></textarea>
+                <button type="submit" class="btn-primary">Enviar</button>
+            </form>
+
+            <div id="form-feedback" class="form-feedback"></div>
+
+            <div class="whatsapp-box">
+                <p>Ou fale agora:</p>
+                <a href="https://wa.me/55SEUNUMERO?text=Ol%C3%A1!%20Vi%20seu%20site..." class="btn-whatsapp" target="_blank">
+                    Falar no WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 [Nome do Cliente]. Todos os direitos reservados.</p>
+            <p>Desenvolvido por <a href="https://vorgweb.com">Vorg Web</a></p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp flutuante acima do footer -->
+    <!-- Botão WhatsApp flutuante acima do footer -->
+<a href="https://wa.me/55SEUNUMERO" class="whatsapp-float" target="_blank" title="Fale no WhatsApp">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="24" height="24" rx="12" fill="#25D366"/>
+        <path fill="#FFFFFF" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.497.099-.198.05-.371-.025-.52-.074-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.29.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+    </svg>
+</a>
+
+    <script src="funcional.js"></script>
+</body>
+</html>
